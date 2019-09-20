@@ -52,6 +52,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     _lastLocation = self.center;
+    self.backgroundColor = [UIColor pushedColor];
 }
 
 

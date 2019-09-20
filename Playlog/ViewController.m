@@ -25,11 +25,16 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self.viewWheel setupView];
-    [self.viewButton setupView];
-    self.viewButton.delegate = self;
+
+- (void)viewDidLayoutSubviews {
+    // do it once on adjusted screen
+    [super viewDidLayoutSubviews];
+    if (self.viewButton.delegate != self) {
+        [super viewDidLayoutSubviews];
+        [self.viewWheel setupView];
+        [self.viewButton setupView];
+        self.viewButton.delegate = self;
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -39,15 +44,6 @@
 
 -(BOOL)shouldAutorotate {
     return NO;
-}
-
--(void)randomizeX {
-    int x;
-    do {
-        x = arc4random_uniform((uint32_t)self.segmentedX.numberOfSegments);
-    } while (x == _x);
-    self.segmentedX.selectedSegmentIndex = x;
-    [self segmentedValueChanged:self.segmentedX];
 }
 
 #pragma mark - Photos
@@ -79,9 +75,10 @@
     allPhotosOptions.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:YES]];
     self.assetsFetchResults = [PHAsset fetchAssetsWithOptions:allPhotosOptions];
     NSLog(@"Found %@", self.assetsFetchResults);
+    if (self.assetsFetchResults.count < 20)
+        [self showAlertWithMessage:@"The app needs at least 20 photos to be presented on device. Make additional photos and RELAUNCH the app."];
     [self randomizeX];
 }
-
 
 - (void)updateWithRandomImages {
     // refresh array of random indexes
@@ -89,19 +86,21 @@
     // clear stack
     [self.stackView.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
     // refresh stack
-    void (^ imageRequestResultHandler)(NSData *, NSString *, UIImageOrientation, NSDictionary *) =
+    void (^ imageDataRequestResultHandler)(NSData *, NSString *, UIImageOrientation, NSDictionary *) =
         ^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 UIImage *im = [UIImage imageWithData:imageData];
                 [self.stackView addArrangedSubview:[[UIImageView alloc] initWithImage:im]];
-                [self updateBackground];
+                if (self.stackView.subviews.count == self.randomIndexes.count) // all images are in stack
+                    [self updateBackground];
             });
         };
+    // get image
     PHAsset *asset;
     for (NSNumber *num in self.randomIndexes) {
         asset = self.assetsFetchResults[num.integerValue ];
         PHImageRequestOptions *imageRequestOptions = [PHImageRequestOptions new];
-        [[PHImageManager defaultManager] requestImageDataForAsset:asset options:imageRequestOptions resultHandler:imageRequestResultHandler];
+        [[PHImageManager defaultManager] requestImageDataForAsset:asset options:imageRequestOptions resultHandler:imageDataRequestResultHandler];
     }
 }
 
@@ -115,6 +114,16 @@
 
 - (void)randomizeImages {
     self.randomIndexes = [NSArray arrayOfRandomIndexesWithCapacity:_x fromLength:self.assetsFetchResults.count];
+}
+
+
+-(void)randomizeX {
+    int x;
+    do {
+        x = arc4random_uniform((uint32_t)self.segmentedX.numberOfSegments);
+    } while (x == _x);
+    self.segmentedX.selectedSegmentIndex = x;
+    [self segmentedValueChanged:self.segmentedX];
 }
 
 #pragma mark - Actions
