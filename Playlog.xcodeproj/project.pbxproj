@@ -7,15 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D102955B233465E600E2BCA3 /* PlaylogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D102955A233465E600E2BCA3 /* PlaylogTests.m */; };
+		D10295622334662F00E2BCA3 /* NSArray+Randomize.m in Sources */ = {isa = PBXBuildFile; fileRef = D1219C812332BDF200DFBD0E /* NSArray+Randomize.m */; };
 		D11DB71C2331C01100085A17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D11DB71B2331C01100085A17 /* AppDelegate.m */; };
 		D11DB71F2331C01100085A17 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D11DB71E2331C01100085A17 /* ViewController.m */; };
 		D11DB7222331C01100085A17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11DB7202331C01100085A17 /* Main.storyboard */; };
 		D11DB7242331C01200085A17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D11DB7232331C01200085A17 /* Assets.xcassets */; };
 		D11DB7272331C01200085A17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11DB7252331C01200085A17 /* LaunchScreen.storyboard */; };
 		D11DB72A2331C01200085A17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D11DB7292331C01200085A17 /* main.m */; };
+		D11DB7322331C06200085A17 /* WheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = D11DB7312331C06200085A17 /* WheelView.m */; };
+		D11DB7352331C92500085A17 /* ButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = D11DB7342331C92500085A17 /* ButtonView.m */; };
+		D11DB7392331F0D700085A17 /* UIColor+ButtonState.m in Sources */ = {isa = PBXBuildFile; fileRef = D11DB7382331F0D700085A17 /* UIColor+ButtonState.m */; };
+		D11DB73C233247E300085A17 /* UIImage+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = D11DB73B233247E300085A17 /* UIImage+Create.m */; };
+		D1219C7F2332957100DFBD0E /* UIViewController+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = D1219C7E2332957100DFBD0E /* UIViewController+Alert.m */; };
+		D1219C822332BDF200DFBD0E /* NSArray+Randomize.m in Sources */ = {isa = PBXBuildFile; fileRef = D1219C812332BDF200DFBD0E /* NSArray+Randomize.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D102955D233465E600E2BCA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D11DB70F2331C01100085A17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D11DB7162331C01100085A17;
+			remoteInfo = Playlog;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		D1029558233465E600E2BCA3 /* PlaylogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaylogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D102955A233465E600E2BCA3 /* PlaylogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaylogTests.m; sourceTree = "<group>"; };
+		D102955C233465E600E2BCA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D11DB7172331C01100085A17 /* Playlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D11DB71A2331C01100085A17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D11DB71B2331C01100085A17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,9 +47,28 @@
 		D11DB7262331C01200085A17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D11DB7282331C01200085A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D11DB7292331C01200085A17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D11DB7302331C06200085A17 /* WheelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WheelView.h; sourceTree = "<group>"; };
+		D11DB7312331C06200085A17 /* WheelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WheelView.m; sourceTree = "<group>"; };
+		D11DB7332331C92500085A17 /* ButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonView.h; sourceTree = "<group>"; };
+		D11DB7342331C92500085A17 /* ButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonView.m; sourceTree = "<group>"; };
+		D11DB7372331F0D700085A17 /* UIColor+ButtonState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ButtonState.h"; sourceTree = "<group>"; };
+		D11DB7382331F0D700085A17 /* UIColor+ButtonState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ButtonState.m"; sourceTree = "<group>"; };
+		D11DB73A233247E300085A17 /* UIImage+Create.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Create.h"; sourceTree = "<group>"; };
+		D11DB73B233247E300085A17 /* UIImage+Create.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Create.m"; sourceTree = "<group>"; };
+		D1219C7D2332957100DFBD0E /* UIViewController+Alert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alert.h"; sourceTree = "<group>"; };
+		D1219C7E2332957100DFBD0E /* UIViewController+Alert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alert.m"; sourceTree = "<group>"; };
+		D1219C802332BDF200DFBD0E /* NSArray+Randomize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Randomize.h"; sourceTree = "<group>"; };
+		D1219C812332BDF200DFBD0E /* NSArray+Randomize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Randomize.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D1029555233465E600E2BCA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D11DB7142331C01100085A17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +79,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1029559233465E600E2BCA3 /* PlaylogTests */ = {
+			isa = PBXGroup;
+			children = (
+				D102955A233465E600E2BCA3 /* PlaylogTests.m */,
+				D102955C233465E600E2BCA3 /* Info.plist */,
+			);
+			path = PlaylogTests;
+			sourceTree = "<group>";
+		};
 		D11DB70E2331C01100085A17 = {
 			isa = PBXGroup;
 			children = (
 				D11DB7192331C01100085A17 /* Playlog */,
+				D1029559233465E600E2BCA3 /* PlaylogTests */,
 				D11DB7182331C01100085A17 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				D11DB7172331C01100085A17 /* Playlog.app */,
+				D1029558233465E600E2BCA3 /* PlaylogTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +109,13 @@
 		D11DB7192331C01100085A17 /* Playlog */ = {
 			isa = PBXGroup;
 			children = (
+				D11DB7362331F0A100085A17 /* Utilities */,
 				D11DB71A2331C01100085A17 /* AppDelegate.h */,
 				D11DB71B2331C01100085A17 /* AppDelegate.m */,
+				D11DB7332331C92500085A17 /* ButtonView.h */,
+				D11DB7342331C92500085A17 /* ButtonView.m */,
+				D11DB7302331C06200085A17 /* WheelView.h */,
+				D11DB7312331C06200085A17 /* WheelView.m */,
 				D11DB71D2331C01100085A17 /* ViewController.h */,
 				D11DB71E2331C01100085A17 /* ViewController.m */,
 				D11DB7202331C01100085A17 /* Main.storyboard */,
@@ -71,9 +127,42 @@
 			path = Playlog;
 			sourceTree = "<group>";
 		};
+		D11DB7362331F0A100085A17 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D1219C7D2332957100DFBD0E /* UIViewController+Alert.h */,
+				D1219C7E2332957100DFBD0E /* UIViewController+Alert.m */,
+				D11DB7372331F0D700085A17 /* UIColor+ButtonState.h */,
+				D11DB7382331F0D700085A17 /* UIColor+ButtonState.m */,
+				D11DB73A233247E300085A17 /* UIImage+Create.h */,
+				D11DB73B233247E300085A17 /* UIImage+Create.m */,
+				D1219C802332BDF200DFBD0E /* NSArray+Randomize.h */,
+				D1219C812332BDF200DFBD0E /* NSArray+Randomize.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D1029557233465E600E2BCA3 /* PlaylogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1029561233465E600E2BCA3 /* Build configuration list for PBXNativeTarget "PlaylogTests" */;
+			buildPhases = (
+				D1029554233465E600E2BCA3 /* Sources */,
+				D1029555233465E600E2BCA3 /* Frameworks */,
+				D1029556233465E600E2BCA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D102955E233465E600E2BCA3 /* PBXTargetDependency */,
+			);
+			name = PlaylogTests;
+			productName = PlaylogTests;
+			productReference = D1029558233465E600E2BCA3 /* PlaylogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D11DB7162331C01100085A17 /* Playlog */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D11DB72D2331C01200085A17 /* Build configuration list for PBXNativeTarget "Playlog" */;
@@ -100,6 +189,10 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Konstantin Klyatskin";
 				TargetAttributes = {
+					D1029557233465E600E2BCA3 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = D11DB7162331C01100085A17;
+					};
 					D11DB7162331C01100085A17 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -119,11 +212,19 @@
 			projectRoot = "";
 			targets = (
 				D11DB7162331C01100085A17 /* Playlog */,
+				D1029557233465E600E2BCA3 /* PlaylogTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D1029556233465E600E2BCA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D11DB7152331C01100085A17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,17 +238,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D1029554233465E600E2BCA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10295622334662F00E2BCA3 /* NSArray+Randomize.m in Sources */,
+				D102955B233465E600E2BCA3 /* PlaylogTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D11DB7132331C01100085A17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D11DB71F2331C01100085A17 /* ViewController.m in Sources */,
+				D11DB7352331C92500085A17 /* ButtonView.m in Sources */,
+				D1219C7F2332957100DFBD0E /* UIViewController+Alert.m in Sources */,
+				D11DB73C233247E300085A17 /* UIImage+Create.m in Sources */,
 				D11DB72A2331C01200085A17 /* main.m in Sources */,
+				D11DB7392331F0D700085A17 /* UIColor+ButtonState.m in Sources */,
+				D1219C822332BDF200DFBD0E /* NSArray+Randomize.m in Sources */,
+				D11DB7322331C06200085A17 /* WheelView.m in Sources */,
 				D11DB71C2331C01100085A17 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D102955E233465E600E2BCA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D11DB7162331C01100085A17 /* Playlog */;
+			targetProxy = D102955D233465E600E2BCA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D11DB7202331C01100085A17 /* Main.storyboard */ = {
@@ -169,6 +293,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D102955F233465E600E2BCA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9ZFK399Y3;
+				INFOPLIST_FILE = PlaylogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.planetdrives.PlaylogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Playlog.app/Playlog";
+			};
+			name = Debug;
+		};
+		D1029560233465E600E2BCA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9ZFK399Y3;
+				INFOPLIST_FILE = PlaylogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.planetdrives.PlaylogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Playlog.app/Playlog";
+			};
+			name = Release;
+		};
 		D11DB72B2331C01200085A17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -318,6 +480,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D1029561233465E600E2BCA3 /* Build configuration list for PBXNativeTarget "PlaylogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D102955F233465E600E2BCA3 /* Debug */,
+				D1029560233465E600E2BCA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D11DB7122331C01100085A17 /* Build configuration list for PBXProject "Playlog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
