@@ -109,7 +109,8 @@
     if (_buttonAngle <0)
         _buttonAngle += 2. * M_PI;
     int num = (self.stackView.subviews.count) * _buttonAngle / (2.* M_PI);
-    self.viewImage.image = [self.stackView.subviews[num] image];
+    if (self.stackView.subviews.count > num)
+        self.viewImage.image = [self.stackView.subviews[num] image];
 }
 
 - (void)randomizeImages {
